@@ -1,0 +1,24 @@
+<!-- table-view.component.html -->
+
+<div>
+<h2>View Data</h2>
+<div class="search-data">
+    <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="Search">
+  </div>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data | filter:searchText">
+      <td>{{ item.name }}</td>
+      <td>{{ item.email }}</td>
+      <td>{{ item.phone }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>

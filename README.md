@@ -25,3 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+Useful commands:-
+To run the app go to root directory of project and then run command ng serve --open.
+To create a new angular project, we use command ng new project-name
+If you want to create component or service, use command ng generate component/service component-name/service-name
